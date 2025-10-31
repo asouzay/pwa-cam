@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PWA - Câmera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/camera_256x.png">
+    <link rel="icon" href="images/camera_256x.png" sizes="256x256">
+    <meta name="theme-color" content="white">
+</head>
+<body>
+    <main id="camera">
+        <h1>📸 Câmera</h1>
+        <div id="camera-sensor" class="lens">
+            <canvas id="camera-view"></canvas>
+        </div>
+        <video id="camera-viewer" autoplay playsinline></video>
+        <div id="camera-output">
+            <img id="camera-photo" alt="id-camera-output">
+        </div>
+        <button id="camera-trigger">Tirar foto</button>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
